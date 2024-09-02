@@ -1,0 +1,20 @@
+---
+import Section from '@components/Section.astro'
+import { projects } from '@resume'
+---
+<Section section="Projects">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    {projects.map((project, index) => (
+      <div key={index} class="border border-gray-100 border-2 p-2 rounded-md h-44">
+        <a href={project.repository} target="_blank" class="text-lg font-bold hover:underline py-2">{project.name}</a>
+        <div class="text-sm flex flex-wrap mb-1">
+          <span class="mr-1">Toolkit: </span>
+          {project.toolkit.map((tool, index) => (
+            <span key={index}>{tool}</span>
+          ))}
+        </div>
+        <p class="text-base">{project.description}</p>
+      </div>
+    ))}
+  </div>
+</Section>

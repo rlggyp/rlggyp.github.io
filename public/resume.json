@@ -1,0 +1,21 @@
+{
+  "name": "Your Name",
+  "job": "Your Job Title",
+  "email": "your.email@example.com",
+  "location": "City, Country",
+  "avatar": "https://example.com/avatar.jpg",
+  "resume": "https://example.com/resume",
+  "about": "A brief summary about yourself, your skills, and your career objectives.",
+  "projects": [
+    {
+      "name": "Project Name",
+      "repository": "https://github.com/your-repo",
+      "description": "A brief description of the project.",
+      "toolkit": [
+        "Tool 1",
+        "Tool 2",
+        "Tool 3"
+      ]
+    }
+  ]
+}
