@@ -22,6 +22,4 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
-
-# resume
-public/resume.json
+public/

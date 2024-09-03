@@ -5,7 +5,7 @@ import { projects } from '@resume'
 <Section section="Projects">
   <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
     {projects.map((project, index) => (
-      <div key={index} class="border border-gray-100 border-2 p-2 rounded-md h-44">
+      <div key={index} class="border border-gray-100 border-2 p-2 rounded-md">
         <a href={project.repository} target="_blank" class="text-lg font-bold hover:underline py-2">{project.name}</a>
         <div class="text-sm flex flex-wrap mb-1">
           <span class="mr-1">Toolkit: </span>
