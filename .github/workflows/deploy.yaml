@@ -18,7 +18,7 @@ jobs:
       - name: Download resume.json from Google Drive
         run: |
           pip install gdown
-          gdown "${{ secrets.GOOGLE_DRIVE }}" -O private/resume.json --folder --quiet
+          gdown "${{ secrets.GOOGLE_DRIVE }}" -O private/resume.json --quiet
       - name: Install, build, and deploy Astro site
         uses: withastro/action@v2
 
