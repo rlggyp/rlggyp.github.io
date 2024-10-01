@@ -1,9 +1,6 @@
 name: Deploy to GitHub Pages
 
 on:
-  push:
-    branches: [ main ]
-
   workflow_dispatch:
 
 # Allow this job to clone the repo and create a page deployment
@@ -18,6 +15,10 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+      - name: Download resume.json from Google Drive
+        run: |
+          pip install gdown
+          gdown "${{ secrets.GOOGLE_DRIVE }}" -O private/resume.json --quiet
       - name: Install, build, and deploy Astro site
         uses: withastro/action@v2
 
